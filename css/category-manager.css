@@ -1,0 +1,432 @@
+body {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+.content-left {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.pro_sec {
+    width: 208px;
+    height: 152px;
+    margin-top: 16px;
+}
+
+.project {
+    width: 208px;
+    height: 40px;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.sec:hover {
+    background-color: #D7EDFF;
+    color: #0E73F6;
+}
+
+.icon {
+
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    margin-top: 2px;
+}
+
+.project .text {
+    font-size: 14px;
+}
+
+.sections {
+    width: 208px;
+    height: 96px;
+}
+.on{
+    background-color: #D7EDFF;
+    color: #0E73F6;
+}
+.sec {
+    width: 188px;
+    height: 24px;
+    padding: 4px 12px 4px 8px;
+    
+}
+
+header {
+    width: 1160px;
+    height: 65px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E5E9EB;
+}
+
+.ion {
+    margin-right: 16px;
+}
+
+.img {
+    border-radius: 999px;
+}
+
+.bok {
+    margin-right: 950px;
+    margin-left: 33px;
+    height: 14px;
+    width: 14px;
+}
+
+.frame1 {
+    width: 1112px;
+    height: 45px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.sty {
+    margin-left: 24px;
+}
+
+.frame1 button {
+    width: 178px;
+    height: 44px;
+    border-radius: 6px;
+    margin-left: 12px;
+    background-color: #4094F7;
+    color: #FFFFFF;
+    border: none;
+}
+
+select {
+    margin-left: 570px;
+    width: 245px;
+    height: 44px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    padding-left: 14px;
+}
+
+.pen {
+    margin-left: 30px;
+    color: #FF9500;
+}
+
+.input {
+    width: 1112px;
+    height: 46px;
+    margin-left: 7px;
+    margin-top: 12px;
+    margin-left: 790px;
+    position: relative;
+    width: 343px;
+    display: flex;
+    border: 1px solid #ddd;
+    align-items: center;
+    
+}
+.search-icon-input{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+
+.search {
+    padding-right: 10px;
+}
+
+.input input {
+    width: 343px;
+    height: 44px;
+    padding: 0 40px 0 10px;
+
+    border: none;
+    font-size: 16px;
+    color: #666;
+}
+
+table {
+    margin-left: 24px;
+    margin-top: 12px;
+}
+
+thead {
+    background-color: #EAECF0;
+
+}
+
+tbody td {
+    padding: 16px 24px 16px 24px;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+}
+
+thead td {
+    padding: 12px 24px 12px 24px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    height: 20px;
+}
+
+.name {
+    width: 655px;
+}
+
+.trangthai {
+    width: 187px;
+}
+
+.chucnang {
+    width: 126px;
+}
+
+.chucnang .fa-trash {
+    color: #FF0101;
+}
+
+.hoatdong {
+    background-color: aquamarine;
+    color: #027A48;
+    border-radius: 16px;
+    padding-left: 5px;
+}
+
+.ngunghoatdong {
+    background-color: #FEF2F2;
+    color: #B91C1C;
+    border-radius: 16px;
+    padding-left: 5px;
+}
+.hoatdong::before,
+.ngunghoatdong::before {
+    content: "•";
+    font-size: 20px;
+    margin-right: 8px;
+    color: inherit;
+}
+
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    margin-top: 18px;
+    justify-content: center;
+    border: none;
+}
+
+.pagination a,
+.pagination span {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+   
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+
+.pagination a:hover {
+    background: #e0e0e0;
+}
+
+.pagination .active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    
+}
+
+.pagination .arrow {
+    color: #007bff;
+    font-size: 18px;
+    
+}
+
+.pagination span {
+    border: none;
+    
+
+}
+.active{
+    width: 33px;
+    height: 33px;
+    
+}
+
+.pagination button{
+    width: 33px;
+    height: 33px;
+}
+.btn {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+/* Overlay (nền mờ) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup - Chỉnh kích thước theo ảnh */
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    height: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.popup-body label {
+    display: block;
+    margin-top: 5px;
+}
+
+.popup-body input {
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#popup {
+    display: none;
+}
+
+.radio-group{
+    display: flex;
+}
+#active{
+    width: 16px;
+    margin: 0 5px 0 20px;
+    
+}
+#inactive{
+    width: 16px;
+    margin: 0px 5px 0px 25px;
+}
+.popup-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn-cancel {
+    background: #f0f0f0;
+    margin-right: 10px;
+}
+
+.btn-save {
+    background: #007bff;
+    color: white;
+}
+
+/* Hiển thị popup khi có class "show" */
+.overlay.show {
+    display: flex;
+}
+#snackbar{
+    display: none;
+    
+}
+#snackbar.show {
+    display: flex;
+    
+}
+
+#snackbar.hide {
+    display: none;
+}
+
+
+.delete-btn{
+    color: #FF0101;
+    background-color: white;
+    border: none;
+}
+.edit-btn{
+    background-color: white;
+    color: #FF9500;
+    border: none;
+}
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 300px;
+}
+
+.popup-buttons {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.popup-buttons button {
+    margin-left: 10px;
+}
+.edit-pop2{
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.width-pop{
+    width: 400px;
+    height: 25px;
+    
+}

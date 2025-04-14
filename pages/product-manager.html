@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí bài học</title>
+    <link rel="stylesheet" href="/css/product-manager.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="content-left">
+        <div class="pro_sec">
+            <div class="project">
+                <p class="icon">📚</p>
+                <div class="text">
+                    <b>Study Tracker</b><br>
+                    <small>Quản lý tiến độ học tập</small>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="sec"><i class="fa-solid fa-arrow-trend-up"></i> &nbsp; Thống kê</div>
+                <div class="sec" onclick="window.location.href='./category-manager.html';">
+                    <i class="fa-solid fa-book"></i> &nbsp; Quản lý môn học</div>
+                <div class="sec on" onclick="window.location.href='./product-manager.html';">
+                    <i class="fa-regular fa-note-sticky"></i> &nbsp; Quản lý bài học</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentright">
+        <header>
+            <i class="bok fa-solid fa-book-open-reader"></i>
+            <i class="fa-solid fa-bell ion"></i>
+            <i class="fa-solid fa-circle-question ion"></i>
+            <i class="fa-solid fa-gear ion"></i>
+            <img class="img"
+                src="https://s3-alpha-sig.figma.com/img/357b/8289/93b2568bef15a7cc073d25dce27c39e6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=defuKDM8ziOZYuZtdXvm6T-iu3kVDw8TACKeR3qKH6qE6CzPueUjgPPburWbBDAqVrQBt2hY4JWgqXbMzkGAsBHZJz5b3Vb6TH4dAzA0uCYZtmreSpyMGYtwef6r2t~~o4J-myNdCf4PaH1VnrK1gceY-RV8NDbld8O6-751ygy9HT3NJF13Jv-o-x60HyZoDYSYn8V-b482~9BL~-uKXt6-NCVXNjqgWOlsDsj2~GZXiAs2v2krQ~c2t317uHc5mx41kuw1A69Oo1s~V-KXog~r8leHWJZtGmr1r2nVl7IgfkZ7ct67eN9lceJmNGFZyu1DPZavZEw35iybcW~gxw__"
+                height="24px" width="24px" alt="" onclick="window.location.href='/pages/register.html';">
+        </header>
+
+        <div class="frame1">
+            <h3 class="sty">Bài học</h3>
+            <select>
+                <option value="1">Lọc theo bài học</option>
+                <option value="2">Đang hoạt động</option>
+                <option value="3">Ngừng hoạt động</option>
+            </select>
+            <button class="btn btn-open" onclick="document.querySelector('.form-them').classList.toggle('active')">Thêm
+                mới bài học</button>
+        </div>
+
+        <!-- Form thêm bài học -->
+        <div class="form-them">
+            <span class="close-btn">&times;</span>
+            <input type="text" id="newName" placeholder="Tên bài học">
+            <input type="text" id="newSubject" placeholder="Môn học">
+            <input type="number" id="newTime" placeholder="Thời gian (phút)">
+            <select id="newStatus">
+                <option value="Đã hoàn thành">Đã hoàn thành</option>
+                <option value="Chưa hoàn thành">Chưa hoàn thành</option>
+            </select>
+            <button id="addBtn">Thêm bài học</button>
+            <button id="deleteSelectedBtn" style="background-color: #e74c3c; color: white;">Xoá mục đã chọn</button>
+        </div>
+
+
+        <!-- Thanh tìm kiếm -->
+        <div class="input">
+            <input type="text" placeholder="Tìm kiếm bài học theo tên...">
+            <i class="search fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- Form Sửa bài học -->
+        <div class="form-them">
+            <span class="close-btn">&times;</span>
+            <input type="text" id="editName" placeholder="Tên bài học">
+            <input type="text" id="editSubject" placeholder="Môn học">
+            <input type="number" id="editTime" placeholder="Thời gian (phút)">
+            <select id="editStatus">
+                <option value="Đã hoàn thành">Đã hoàn thành</option>
+                <option value="Chưa hoàn thành">Chưa hoàn thành</option>
+            </select>
+            <button id="editBtn">Cập nhật bài học</button>
+        </div>
+
+        <!-- Bảng dữ liệu -->
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <td class="label">
+                        <label><input type="checkbox"
+                                onclick="
+                            document.querySelectorAll('.select-checkbox').forEach(cb => cb.checked = this.checked)"></label>
+                    </td>
+                    <td class="name">Tên bài học</td>
+                    <td class="time">Thời gian học</td>
+                    <td class="trangthai">Trạng thái</td>
+                    <td class="chucnang">Chức năng</td>
+                </tr>
+            </thead>
+            <tbody id="product">
+                <!-- Nội dung JS tạo -->
+            </tbody>
+        </table>
+
+        <!-- Phân trang -->
+        <div class="pagination" id="pagination">
+            <!-- JS tạo nút trang -->
+        </div>
+    </div>
+
+    <script src="../js/product-manager.js"></script>
+</body>
+
+</html>

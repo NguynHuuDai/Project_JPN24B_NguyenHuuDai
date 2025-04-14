@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.input-content{
+    margin: 162.5px 0px 0px 0px;   
+    width: 535px;
+    height: 574px;
+}
+.title{
+    width: 461px;
+    height: 60px;
+    margin-bottom: 64px;
+}
+.title h1{
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.title p{
+    margin: 0;
+    padding: 0;
+    color: #52525B;
+}
+.input{
+    width: 526px;
+    height: 95px;
+    margin-bottom: 16px;
+}
+.input p{
+    margin: 0 0 11px 0;
+    padding: 0;
+}
+.input input{
+    width: 529.5px;
+    height: 60px;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    padding-left: 20px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+.checkbox input{
+    height: 20px;
+    width: 20px;
+}
+.checkbox a{
+    text-decoration: none;
+    margin-left: 300px;
+    color: #2563EB;
+}
+
+button{
+    width: 535px;
+    height: 55px;
+    border: none;
+    color: white;
+    background-color: #2563EB;
+    border-radius: 9px;
+    margin-top: 26px;
+}
+.thong-bao-loi {
+    color: red;
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        height: 540;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .title {
+        width: 100%;
+        height: 88px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .input {
+        width: 100%;
+    }
+    .input input {
+        width: 100%;
+        height: 50px;
+    }
+    .checkbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .checkbox a {
+        margin-left: auto;
+    }
+    button {
+        width: 100%;
+        height: 50px;
+    }
+}

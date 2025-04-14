@@ -1,0 +1,420 @@
+body {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+.content-left {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.pro_sec {
+    width: 208px;
+    height: 152px;
+    margin-top: 16px;
+}
+
+.project {
+    width: 208px;
+    height: 40px;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.sec:hover {
+    background-color: #D7EDFF;
+    color: #0E73F6;
+}
+
+.icon {
+
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    margin-top: 2px;
+}
+
+.project .text {
+    font-size: 14px;
+}
+
+.sections {
+    width: 208px;
+    height: 96px;
+}
+
+.sec {
+    width: 188px;
+    height: 24px;
+    padding: 4px 12px 4px 8px;
+}
+.on {
+    background-color: #D7EDFF;
+    color: #0E73F6;
+}
+header {
+    width: 1160px;
+    height: 65px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E5E9EB;
+}
+
+.ion {
+    margin-right: 16px;
+}
+
+.img {
+    border-radius: 999px;
+}
+
+.bok {
+    margin-right: 950px;
+    margin-left: 33px;
+    height: 14px;
+    width: 14px;
+}
+
+.frame1 {
+    width: 1112px;
+    height: 45px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.sty {
+    margin-left: 24px;
+    width: 70px;
+}
+
+.frame1 button {
+    width: 178px;
+    height: 44px;
+    border-radius: 6px;
+    margin-left: 12px;
+    background-color: #4094F7;
+    color: #FFFFFF;
+    border: none;
+}
+
+select {
+    margin-left: 410px;
+    width: 245px;
+    height: 44px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    padding-left: 14px;
+}
+
+.pen {
+    margin-left: 30px;
+    color: #FF9500;
+}
+
+.input {
+    width: 1112px;
+    height: 46px;
+    margin-left: 7px;
+    margin-top: 12px;
+}
+
+.input {
+    margin-left: 790px;
+    position: relative;
+    width: 343px;
+    display: flex;
+    border: 1px solid #ddd;
+    align-items: center;
+}
+
+.search {
+    padding-right: 10px;
+}
+
+.input input {
+    width: 343px;
+    height: 44px;
+    padding: 0 40px 0 10px;
+
+    border: none;
+    font-size: 16px;
+    color: #666;
+}
+
+table {
+    margin-left: 24px;
+    margin-top: 12px;
+}
+
+thead {
+    background-color: #EAECF0;
+
+}
+
+tbody td {
+    padding: 16px 24px 16px 24px;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+}
+
+thead td {
+    padding: 12px 24px 12px 24px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    height: 20px;
+}
+
+.name {
+    width: 371px;
+}
+
+.trangthai {
+    width: 187px;
+}
+.label{
+    width: 60px;
+    height: 44px;
+    box-sizing: border-box;
+}
+.time {
+    width: 166px;
+    padding: 16px 24px;
+}
+
+.chucnang {
+    width: 126px;
+}
+
+.chucnang .fa-trash {
+    color: #FF0101;
+}
+
+.hoatdong {
+    background-color: aquamarine;
+    color: #027A48;
+    border-radius: 16px;
+}
+
+.ngunghoatdong {
+    background-color: #FEF2F2;
+    color: #B91C1C;
+    border-radius: 16px;
+}
+
+
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    margin-top: 18px;
+    justify-content: center;
+}
+
+.pagination a,
+.pagination span {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+
+.pagination a:hover {
+    background: #e0e0e0;
+}
+
+.pagination .active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination .arrow {
+    color: #007bff;
+    font-size: 18px;
+}
+
+.pagination span {
+    border: none;
+
+}
+.delete-btn {
+    color: #FF0101;
+    background-color: white;
+    border: none;
+}
+
+.edit-btn {
+    background-color: white;
+    color: #FF9500;
+    border: none;
+}
+
+
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #eee;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* Style cho popup */
+.form-them {
+    display: none;
+    /* Popup ẩn mặc định */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(227, 227, 227);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    z-index: 9999;
+}
+
+/* Màn hình mờ phía sau */
+.form-them::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(112, 112, 112, 0.5);
+    z-index: -1;
+}
+
+/* Style cho các input và select bên trong popup */
+.form-them input,
+.form-them select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style cho các nút trong popup */
+.form-them button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form-them button:hover {
+    background-color: #2980b9;
+}
+
+/* Style cho nút Xoá mục đã chọn */
+#deleteSelectedBtn {
+    background-color: #e74c3c;
+    margin-top: 10px;
+}
+
+#deleteSelectedBtn:hover {
+    background-color: #c0392b;
+}
+/* Nút đóng (X) */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #e74c3c;
+    /* Chuyển màu khi hover */
+}
+/* Cập nhật CSS cho popup */
+.form-them {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    z-index: 1000;
+}
+
+.form-them input,
+.form-them select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-them button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-them .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
